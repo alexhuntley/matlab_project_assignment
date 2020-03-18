@@ -89,7 +89,7 @@ scores = S(sub2ind(size(S), 1:quota_sum, assignment'))';
 T = table(worker_names, project_names, scores);
 T.Properties.VariableNames = {'Worker'; 'Project'; 'Score'};
 
-[file, dir] = uiputfile({'*.xlsx'; '*.csv'});
+[file, dir] = uiputfile({'*.xlsx'; '*.xls'; '*.dat'; '*.txt'; '*.csv'});
 if ~file
     return
 end
